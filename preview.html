@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
   <title>PREVIEW: LSN Window Cleaning Website Concept</title>
   <meta name="description" content="LSN Window Cleaning is Lee's family-run round across Enfield and north London: windows, frames and sills done thoroughly, on the same week every time, with a text before he comes. Call 07857 153597.">
-  <link rel="canonical" href="https://www.lsnwindowcleaning.co.uk/">
-  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:image" content="https://lsnwindows.co.uk/images/squeegee-glass.jpg">
+<link rel="canonical" href="https://lsnwindows.co.uk/">
+  <meta name="robots" content="index, follow">
   <meta property="og:title" content="LSN Window Cleaning | Family-Run Window Cleaners, Enfield">
   <meta property="og:description" content="The round you never have to chase. Family-run window cleaning across Enfield and north London, with a text before he comes.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.lsnwindowcleaning.co.uk/">
+  <meta property="og:url" content="https://lsnwindows.co.uk/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
@@ -19,10 +21,11 @@
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
+  "image": "https://lsnwindows.co.uk/images/squeegee-glass.jpg",
     "additionalType": "https://schema.org/ProfessionalService",
     "name": "LSN Window Cleaning",
     "description": "Family-run window cleaning round covering Enfield and north London: exterior windows, frames, sills and doors on a regular schedule, with a reminder text before each visit.",
-    "url": "https://www.lsnwindowcleaning.co.uk/",
+    "url": "https://lsnwindows.co.uk/",
     "telephone": "+447857153597",
     "priceRange": "£",
     "areaServed": "Enfield and north London",
@@ -40,25 +43,28 @@
   }
   </script>
 <style>
+  body { padding-top: 3.25rem; }
   .preview-banner {
-    background: #1e1d31; color: #fff; font-family: "Zilla Slab", sans-serif;
-    font-size: 0.8rem; text-align: center; padding: 0.55rem 1rem;
-    border-bottom: 2px solid #c2540b;
+    position: fixed; top: 0; left: 0; right: 0; z-index: 60;
+    background: #2b2a4d; color: #eaeaf6; font-size: 0.82rem; line-height: 1.35;
+    padding: 0.6rem 1rem; text-align: center; border-bottom: 2px solid #f2994a;
+    font-family: system-ui, sans-serif;
   }
-  .preview-banner strong { color: #fed7aa; }
+  .preview-banner strong { color: #f8c99a; }
   .watermark-overlay {
     position: fixed; inset: 0; z-index: 45; pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='340'%20height='200'%3E%3Ctext%20x='-20'%20y='120'%20transform='rotate(-28%20170%20100)'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20fill='rgba(30,29,49,0.08)'%3EPREVIEW%3C/text%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='340'%20height='200'%3E%3Ctext%20x='-20'%20y='120'%20transform='rotate(-28%20170%20100)'%20font-family='Arial,sans-serif'%20font-size='34'%20font-weight='700'%20fill='rgba(43,42,77,0.09)'%3EPREVIEW%3C/text%3E%3C/svg%3E");
     background-repeat: repeat;
   }
+  header.sticky { top: 3.25rem; }
 </style>
 </head>
 <body class="bg-brand-50 text-brand-950 antialiased">
-
 <div class="preview-banner">
-  🔒 <strong>PREVIEW ONLY</strong>: an unpublished design concept prepared for LSN Window Cleaning. Not a live website, and the booking form is disabled here.
+  &#128274; <strong>PREVIEW ONLY</strong>: an unpublished design concept prepared for LSN Window Cleaning, Enfield. Not a live website.
 </div>
 <div class="watermark-overlay" aria-hidden="true"></div>
+
 
   <!-- Header -->
   <header id="site-header" class="sticky top-0 z-40 border-b border-brand-100 bg-brand-50/95 backdrop-blur">
@@ -114,6 +120,12 @@
       </div>
     </section>
 
+    <!-- Photograph band. Ground-level squeegee work: no pole, no ladder, no
+         height, because none of those is evidenced and all are banned. -->
+    <div class="photo-band">
+      <img src="images/squeegee-glass.jpg" alt="A squeegee drawn down a soapy pane of glass, water sheeting off behind it" width="1600" height="742" loading="lazy" decoding="async">
+    </div>
+
     <!-- Bespoke 1: the round -->
     <section id="round" class="bg-brand-100 py-16 lg:py-20">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -165,6 +177,16 @@
         <h2 class="font-display text-3xl font-700 tracking-tight sm:text-4xl">What gets cleaned</h2>
         <p class="mt-4 text-brand-600">Not just the glass. Frames and sills are part of the job, which is why "thorough" and "pride in his work" keep turning up in his reviews. Guide prices below; the real price depends on the house and gets agreed before he starts.</p>
       </div>
+      <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_1.15fr] lg:items-center">
+        <div class="photo-frame">
+          <img src="images/spray-window.jpg" alt="A hand and spray bottle at a window, cleaning the glass" width="1600" height="2400" loading="lazy" decoding="async" class="aspect-[4/3]">
+        </div>
+        <div>
+          <h3 class="font-display text-2xl font-700 tracking-tight">The bit most people mean by clean</h3>
+          <p class="mt-4 text-brand-600">Glass that has been done properly does not just look better from outside. It changes how a room feels from the inside, which is the part nobody mentions until it has been done.</p>
+          <p class="mt-4 text-brand-600">Frames and sills go with it as a matter of course rather than as an extra, and that is worth checking on the call, because plenty of rounds do not include them.</p>
+        </div>
+      </div>
       <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         <div class="card">
           <div class="flex items-baseline justify-between gap-2">
@@ -185,7 +207,7 @@
             <h3 class="font-display text-lg font-700">Detached &amp; larger</h3>
             <span class="shrink-0 text-sm font-bold text-accent-700">from £22</span>
           </div>
-          <p class="mt-2 text-sm text-brand-600">Bigger elevations and conservatories quoted after a look.</p>
+          <p class="mt-2 text-sm text-brand-600">Larger houses quoted after a look rather than over the phone.</p>
         </div>
         <div class="card">
           <div class="flex items-baseline justify-between gap-2">
@@ -320,7 +342,7 @@
             <div class="card">
               <h3 class="font-display text-lg font-700">Call Lee</h3>
               <a href="tel:+447857153597" class="mt-2 inline-block text-lg font-bold text-accent-700 hover:underline">07857 153597</a>
-              <p class="mt-1 text-sm text-brand-600">From 7am. A text is fine too if he is up a ladder.</p>
+              <p class="mt-1 text-sm text-brand-600">From 7am. A text is fine too if he is out on the round.</p>
             </div>
             <div class="card">
               <h3 class="font-display text-lg font-700">Useful to say</h3>
@@ -331,7 +353,7 @@
               <p class="mt-2 text-sm text-brand-600">If someone on your street is already on the round, getting added is easy and often cheaper for everyone.</p>
             </div>
           </div>
-          <form id="preview-form" class="lg:col-span-3 rounded-2xl bg-white p-6 sm:p-8">
+          <form class="lg:col-span-3 rounded-2xl bg-white p-6 sm:p-8" action="mailto:hello@lsnwindows.co.uk" method="post" enctype="text/plain">
             <h3 class="font-display text-2xl font-700">Ask to join</h3>
             <p class="mt-1 text-sm text-brand-600">Leave your details and Lee will come back with a price and the next free slot.</p>
             <div class="mt-6 grid gap-4 sm:grid-cols-2">
@@ -349,7 +371,7 @@
               <textarea name="message" rows="4" required class="mt-1.5 w-full rounded-lg border border-brand-200 px-3.5 py-2.5 font-normal focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-200" placeholder="Three-bed semi on Bush Hill Road, side gate at the back. Every four weeks would be ideal."></textarea>
             </label>
             <button type="submit" class="btn-primary mt-6 w-full sm:w-auto">Send it over</button>
-            <p id="preview-form-note" class="mt-3 text-xs text-brand-500">🔒 Preview mode: this form is disabled and won't send anything. It becomes fully functional on the live site.</p>
+            <p class="mt-3 text-xs text-brand-500">This form opens your email client for now. On the live site it would be wired to a proper booking or email service.</p>
           </form>
         </div>
       </div>
@@ -369,7 +391,7 @@
       </div>
       <div class="mt-10 flex flex-col gap-2 border-t border-brand-800 pt-6 text-xs text-brand-400 sm:flex-row sm:items-center sm:justify-between">
         <p>© 2026 LSN Window Cleaning, Enfield. All rights reserved.</p>
-        <p>Website design &amp; SEO by <span class="font-bold text-brand-100">SC Web Design</span> (unpublished preview)</p>
+        <p>Website design &amp; SEO by <span class="font-bold text-brand-100">SC Web Design</span></p>
       </div>
     </div>
   </footer>
@@ -381,16 +403,5 @@
   </div>
 
   <script src="js/main.js"></script>
-<script>
-  const previewForm = document.getElementById('preview-form');
-  if (previewForm) {
-    previewForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const note = document.getElementById('preview-form-note');
-      note.textContent = "🔒 This is a preview, so booking requests can't be sent yet. This form goes live when the site is published.";
-      note.classList.add('font-bold');
-    });
-  }
-</script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #f5f5fb;
+  --color-brand-100: #eaeaf6;
+  --color-brand-200: #d2d2ec;
+  --color-brand-300: #adacd9;
+  --color-brand-400: #8180c1;
+  --color-brand-500: #6260a8;
+  --color-brand-600: #4e4c8b;
+  --color-brand-700: #414071;
+  --color-brand-800: #38375e;
+  --color-brand-900: #32314f;
+  --color-brand-950: #1e1d31;
+
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-200: #fed7aa;
+  --color-accent-300: #fdba74;
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea6a0a;
+  --color-accent-700: #c2540b;
+  --color-accent-800: #9a4310;
+  --color-accent-900: #7c3a11;
+  --color-accent-950: #431a06;
+
+  --font-display: "Zilla Slab", serif;
+  --font-body: "Lato", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+  /* `font-700` and `font-600` are used throughout the markup but are NOT
+     Tailwind utilities, so they generated no CSS at all and every heading
+     intended to be bold was rendering at 400. Zilla Slab is loaded at
+     500/600/700 and none of it was being used. Defined here. */
+  .font-700 { font-weight: 700; }
+  .font-600 { font-weight: 600; }
+}
+
+@layer components {
+  /* ---- Photography, added in the V2 retrofit.
+
+     This trade nearly defeated the programme: a prior iteration recorded
+     window cleaning as a ZERO-STOCK trade after roughly nineteen rejections
+     across three builds. That verdict was reached with the old search method
+     and was re-tested once with the current one, which found usable frames.
+
+     The constraint here is tighter than usual and comes from the copy rules:
+     no ladder, pole, height, gutter or conservatory work is evidenced, so
+     none may be CLAIMED, and a photograph claims as loudly as a sentence.
+     That rules out most window-cleaning stock, which is skyscrapers,
+     harnesses, glass roofs and water-fed poles. Ground-level squeegee work
+     is what is left, and it is what is here. ---- */
+  .photo-band {
+    @apply overflow-hidden border-y border-brand-200;
+  }
+  .photo-band img { @apply block h-full w-full object-cover; }
+  .photo-frame {
+    @apply overflow-hidden rounded-2xl border border-brand-200 bg-brand-100 shadow-sm;
+  }
+  .photo-frame img { @apply block h-full w-full object-cover; }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-700 px-6 py-3.5 font-bold text-white transition hover:bg-brand-800 focus:outline-none focus:ring-4 focus:ring-brand-200;
+  }
+  .btn-light {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand-300 px-6 py-3.5 font-bold text-brand-800 transition hover:border-accent-500 hover:text-accent-700 focus:outline-none focus:ring-4 focus:ring-accent-100;
+  }
+  .btn-dark-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-brand-200/40 px-6 py-3.5 font-bold text-brand-100 transition hover:border-accent-300 hover:text-white focus:outline-none focus:ring-4 focus:ring-brand-700;
+  }
+  .section-eyebrow {
+    @apply mb-3 inline-block text-xs font-bold uppercase tracking-[0.25em] text-accent-700;
+  }
+  .card {
+    @apply rounded-xl bg-white p-6 shadow-sm ring-1 ring-brand-100;
+  }
+  .js-reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .js-reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Lock-screen style heads-up notification */
+  .notif {
+    @apply rounded-2xl bg-white/95 p-4 shadow-2xl ring-1 ring-brand-200 backdrop-blur;
+    max-width: 340px;
+  }
+  .notif-head {
+    @apply mb-2 flex items-center gap-2;
+  }
+  .notif-icon {
+    @apply flex h-7 w-7 items-center justify-center rounded-lg bg-accent-500 font-display text-xs text-white;
+  }
+  .notif-app {
+    @apply text-[11px] font-bold uppercase tracking-[0.16em] text-brand-400;
+  }
+  .notif-time {
+    @apply ml-auto text-[11px] font-bold text-brand-400;
+  }
+
+  /* Round calendar */
+  .cal {
+    @apply rounded-xl bg-white p-5 shadow-sm ring-1 ring-brand-100;
+  }
+  .cal-grid {
+    @apply grid grid-cols-7 gap-1.5;
+  }
+  .cal-cell {
+    @apply flex aspect-square items-center justify-center rounded-md bg-brand-50 text-[11px] font-bold text-brand-300;
+  }
+  .cal-cell.visit {
+    @apply bg-accent-500 text-white shadow;
+  }
+  .cal-cell.muted {
+    @apply bg-brand-50/60 text-brand-200;
+  }
+  .cal-dow {
+    @apply pb-1 text-center text-[10px] font-bold uppercase tracking-wider text-brand-400;
+  }
+
+  /* Promise ticks */
+  .tick-row {
+    @apply flex items-start gap-3;
+  }
+  .tick {
+    @apply mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-accent-500 text-xs font-bold text-white;
+  }
+}

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /preview.html
 
-Sitemap: https://www.lsnwindowcleaning.co.uk/sitemap.xml
+Sitemap: https://lsnwindows.co.uk/sitemap.xml
