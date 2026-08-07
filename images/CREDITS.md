@@ -11,7 +11,7 @@ cannot break if a remote image is moved or removed.
 | File | Source | ID | What is actually in the frame |
 |---|---|---|---|
 | `squeegee-glass.jpg` | Pexels | `31435403` | A squeegee drawn down a soapy pane, gloved hand, water sheeting off |
-| `spray-window.jpg` | Pexels | `9462095` | A hand and spray bottle at a window, soft light, net curtain behind |
+| `window-pad.jpg` | Pexels | `6195113` | A washing pad drawn across the glass, the frame soft behind |
 
 `squeegee-glass.jpg` has its **top 30 per cent cropped away**, because the glass reflected palm trees.
 
@@ -57,3 +57,5 @@ for a photograph:
 
 Judge a drawn element by what it substitutes for. These substitute for an explanation, not for a
 camera.
+
+**Phase three (7 Aug 2026):** the previous frame (9462095) was from the Liliana Drew set shared three ways with the cleaner builds; Cleaning Fairies keeps it. The pad-on-glass replacement keeps the same argument with the trade's own tool.
